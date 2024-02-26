@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "name": "quickstart",
-=======
   "name": "clinicnew",
->>>>>>> 993bdc13 (oke)
   "version": "1.0.0",
   "description": "project",
   "main": "server.js",
