@@ -10,7 +10,6 @@ app.use(bodyParser.urlencoded({extended: true}))
 viewEngine(app);
 initWebrouter(app);
 
-
 let port = process.env.PORT || 2222;
 app.listen( port ,async	()=> {
 	await connectDB()
