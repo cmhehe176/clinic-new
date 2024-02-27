@@ -2,7 +2,7 @@ import express from 'express'
 import bodyParser from 'body-parser'
 import viewEngine from './config/viewEngine'
 import initWebrouter from './route/web'
-import connectDB from './models/mongodb'
+import connectDB from './config/mongodb'
 require('dotenv').config()
 let app = express();
 app.use(bodyParser.json())
