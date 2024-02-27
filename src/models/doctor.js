@@ -6,6 +6,10 @@ let DoctorSchema = new mongoose.Schema({
   name:{
     type: String,
     require: true,
+  },
+    parent:{
+      type:mongoose.Schema.Types.ObjectId,
+      ref:'User'
   }
 });
 DoctorSchema.plugin(seq.plugin,{

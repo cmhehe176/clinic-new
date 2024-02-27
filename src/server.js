@@ -14,5 +14,5 @@ initWebrouter(app);
 let port = process.env.PORT || 2222;
 app.listen( port ,async	()=> {
 	await connectDB()
-	console.log('Connect thành công tại localhost:'+ port)
+	console.log('localhost:'+ port)
 })
