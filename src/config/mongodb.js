@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+const User =require('../models/user');
 
 let connectDB = async () => {
   try {
@@ -11,9 +12,6 @@ let connectDB = async () => {
           console.log('Các bảng (collection) trong database:');
           collections.forEach(collection =>                 
           console.log(collection.name));
-
-
-
   } catch (error) {
     console.error('Lỗi kết nối database:', error);
   }

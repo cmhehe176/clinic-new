@@ -1,5 +1,4 @@
 import mongoose from 'mongoose';
-import mongodb from './config/mongodb'
 
 let UserSchema = new mongoose.Schema({
   name:{
