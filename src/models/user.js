@@ -7,6 +7,7 @@ let UserSchema = new mongoose.Schema({
   },
 });
 let User = mongoose.model('User', UserSchema);
+//khởi tạo 1 object để chuẩn bị lưu vào trong db
 let users = [
   {
     name: 'Admin'
@@ -18,9 +19,8 @@ let users = [
     name: 'Patient'
   }
 ]
-let user
-for (user of users) {
+//tạo lần lượt các table trong db
+for (let user of users) {
   new User(user).save();
 }
-console.log(user)
 module.exports = User;
