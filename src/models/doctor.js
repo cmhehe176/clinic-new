@@ -39,10 +39,9 @@ let doctor = new Doctor({
   name: 'ndmc',
   email:'ndmc',
   address:'ndmc',
- 
   phone:'01234',
   password:'1234',
-  
+  nameuser:'',
 })
 doctor.save()
 module.exports = Doctor;
