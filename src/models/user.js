@@ -36,15 +36,5 @@ let users = [
 for (let user of users) {
   new User(user).save();
 }
-User.find({})
-.populate('doctor')
-.exec((err, result) => {
-  if (err) {
-    console.error(err);
-    return;
-  }
-
-  console.log(result);
-});
 
 module.exports = User;
