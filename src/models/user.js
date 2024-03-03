@@ -6,7 +6,7 @@ let UserSchema = new mongoose.Schema({
     require: true,
   },
 });
-let User = mongoose.model('User', UserSchema);
+export let User = mongoose.model('User', UserSchema);
 //khởi tạo 1 object để chuẩn bị lưu vào trong db
 let users = [
   {
@@ -37,4 +37,3 @@ for (let user of users) {
   new User(user).save();
 }
 
-module.exports = User;
