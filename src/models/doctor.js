@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
 // thằng con thì phải thêm thằng cha
 let DoctorSchema = new mongoose.Schema({
+  role:String,
   name:{
     type: String,
     required: true,
@@ -36,6 +37,7 @@ let DoctorSchema = new mongoose.Schema({
 let Doctor = mongoose.model('Doctor', DoctorSchema);
 
 let doctor = new Doctor({
+  role:'Doctor',
   name: 'ndmc',
   email:'ndmc',
   address:'ndmc',
